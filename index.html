@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title>CSC Champions</title>
+    <style>
+        body {
+            /* Changing background colors */
+            animation: change-bg 10s infinite;
+        }
+
+        @keyframes change-bg {
+            0% { background-color: yellow; }
+            25% { background-color: green; }
+            50% { background-color: blue; }
+            75% { background-color: pink; }
+            100% { background-color: yellow; }
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input, textarea {
+            margin: 10px;
+        }
+
+        input[type="submit"] {
+            width: 100px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSC Champions</h1>
+    <form action="display.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="photo" accept="image/*" required>
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="text" name="phone" placeholder="Phone number" required>
+        <input type="text" name="sex" placeholder="Sex" required>
+        <textarea name="bio" placeholder="Contact bio" rows="5" cols="30" required></textarea>
+        <input type="text" name="facebook" placeholder="Facebook link">
+        <input type="text" name="twitter" placeholder="Twitter link">
+        <input type="text" name="instagram" placeholder="Instagram link">
+        <input type="text" name="regnum" placeholder="Registration number" required>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+      </html>
+          
